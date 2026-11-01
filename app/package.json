@@ -4,14 +4,14 @@
   "version": "1.2.4",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit -p . && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc --noEmit -p . && vite build",
     "typecheck": "tsc --noEmit -p .",
     "test": "vitest run",
     "preview": "vite preview",
     "tauri": "tauri",
-    "build:sidecar": "node ../scripts/build-sidecar.mjs",
-    "build:sidecar:debug": "node ../scripts/build-sidecar.mjs --debug",
+    "build:sidecar": "node init && node ../scripts/build-sidecar.mjs",
+    "build:sidecar:debug": "node init && node ../scripts/build-sidecar.mjs --debug",
     "tauri:build": "npm run build:sidecar && tauri build",
     "tauri:dev": "npm run build:sidecar:debug && tauri dev"
   },

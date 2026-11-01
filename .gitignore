@@ -16,3 +16,4 @@ Thumbs.db
 
 # Rendered films ship as release assets (too large for git)
 /marketing/video/*.mp4
+config.bat
